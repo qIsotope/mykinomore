@@ -1,0 +1,30 @@
+.film__button {
+	display: flex;
+	justify-content: center;
+	min-width: 200px;
+}
+
+.film__customButton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	color: #fff;
+	font-weight: 500;
+	padding: 13px 60px;
+	font-size: 16px;
+	line-height: 16px;
+	border: 1px solid transparent;
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #175a77;
+	transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+}
+
+.film__customButton:hover {
+	background-color: #11465d;
+}
+
+.film__customButton:disabled {
+	background-color: #02304471;
+}

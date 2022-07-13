@@ -1,0 +1,25 @@
+@import url('./reset.css');
+
+
+body {
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Fira Sans";
+}
+
+.App {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	padding: 0px 15px;
+	max-width: 1260px;
+	margin: 0px auto;
+}
+
+.movies-block {
+	margin-bottom: 100px;
+}

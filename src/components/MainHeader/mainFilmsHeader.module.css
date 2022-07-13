@@ -1,0 +1,13 @@
+.film__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
+.films__headerText {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #1f1f1f;
+}
