@@ -1,5 +1,5 @@
 .home {
-	background-image: url('../../../public/assets/home/home-bg.jpg');
+	background-image: url('../../../../public/assets/home/home-bg.jpg');
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;

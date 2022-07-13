@@ -1,0 +1,48 @@
+.catalog__sidebarFilters {
+	margin-bottom: 45px;
+}
+
+.catalog__filterItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 35px;
+}
+
+.catalog__filterItemIcon {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+.catalog__filterItem:last-child {
+	margin-bottom: 0;
+}
+
+.catalog__ratio {
+	color: red;
+}
+
+.catalog__inputs {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.catalog__input {
+	appearance: none;
+	outline: none;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	padding: 0 15px;
+	height: 44px;
+	font-size: 15px;
+	line-height: 17px;
+	width: 100%;
+}
+

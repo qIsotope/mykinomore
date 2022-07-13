@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { useGetSeriesForYearQuery } from '../../redux/services/kinopoisk.services'
-import { Doc } from '../../types/IFilms'
+import { useGetSeriesForYearQuery } from '../../../redux/services/kinopoisk.services'
+import { Doc } from '../../../types/IFilms'
 import { MainFilmsButton } from '../MainButton/MainFilmsButton'
 import { MainFilmsHeader } from '../MainHeader/MainFilmsHeader'
 import { MainFilmsListOfSeries } from './MainFilmsListOfSeries/MainFilmsListOfSeries'

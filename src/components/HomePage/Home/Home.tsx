@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { MyButton } from "../_UI_Elements/MyButton/MyButton"
+import { MyButton } from "../../_UI_Elements/MyButton/MyButton"
 import styles from './home.module.css'
 import { FiArrowRight } from 'react-icons/fi';
 

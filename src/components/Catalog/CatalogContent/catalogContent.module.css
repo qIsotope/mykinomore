@@ -1,0 +1,4 @@
+.catalog__content {
+	display: flex;
+	gap: 60px;
+}

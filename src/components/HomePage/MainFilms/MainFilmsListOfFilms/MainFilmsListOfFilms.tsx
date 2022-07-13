@@ -1,7 +1,7 @@
 
 import { FC, useEffect, useState } from 'react'
-import { useGetFilmsForYearQuery } from '../../../redux/services/kinopoisk.services'
-import { Doc } from '../../../types/IFilms'
+import { useGetFilmsForYearQuery } from '../../../../redux/services/kinopoisk.services'
+import { Doc } from '../../../../types/IFilms'
 import { MainFilmsItem } from '../../MainItem/MainFilmsItem'
 import styles from './mainFilmsListOfFilms.module.css'
 

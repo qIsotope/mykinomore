@@ -1,0 +1,7 @@
+.catalog__sidebarCurrentFilters {
+	margin-bottom: 25px;
+}
+
+.catalog__CurrentFiltersItem:last-child {
+	margin-bottom: 0;
+}

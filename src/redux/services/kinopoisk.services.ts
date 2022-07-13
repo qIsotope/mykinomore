@@ -11,14 +11,14 @@ interface IGetForYear {
 }
 
 export const kinopoiskApi = createApi({
-	reducerPath: 'kinopoiskApi',
+	reducerPath: 'kinomoreApi',
 	baseQuery: fetchBaseQuery({ baseUrl: API_URL }),
 	endpoints: (builder) => ({
 		getFilmsForYear: builder.query<IFilm, IGetForYear>({
-			query: ({ limit = 1000, page = 1 }) => `/movie?field=rating.kp&search=1-10&field=year&search=${getCurrentYear()}&field=typeNumber&search=1&limit=${limit}&page=${page}&&sortField=year&sortType=1&sortField=votes.imdb&sortType=-1&token=${API_KEY}`,
+			query: ({ limit = 1000, page = 1 }) => ``,
 		}),
 		getSeriesForYear: builder.query<IFilm, IGetForYear>({
-			query: ({ limit = 10, page = 1 }) => `/movie?field=rating.kp&search=1-10&field=year&search=${getCurrentYear()}&field=typeNumber&search=2&limit=${limit}&page=${page}&&sortField=year&sortType=1&sortField=votes.imdb&sortType=-1&token=${API_KEY}`,
+			query: ({ limit = 10, page = 1 }) => ``,
 		}),
 	}),
 })

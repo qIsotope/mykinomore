@@ -1,5 +1,6 @@
 import { FC } from 'react'
-import { MyButton } from '../_UI_Elements/MyButton/MyButton'
+import { MyButton } from '../../_UI_Elements/MyButton/MyButton';
+
 import styles from './mainFilmsButton.module.css'
 
 interface IMainFilms {

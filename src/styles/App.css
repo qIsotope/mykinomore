@@ -23,3 +23,30 @@ body {
 .movies-block {
 	margin-bottom: 100px;
 }
+
+
+.rc-slider-handle {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	margin-top: -7px;
+	background-color: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	cursor: grab;
+	opacity: 0.8;
+	touch-action: pan-x;
+	box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+}
+
+.rc-slider-track {
+	position: absolute;
+	height: 4px;
+	background-color: #005382;
+	border-radius: 6px;
+}
+
+.rc-slider-handle-dragging {
+	border-color: none !important;
+	box-shadow: none !important;
+}

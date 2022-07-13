@@ -1,5 +1,5 @@
-import { Doc } from '../../types/IFilms';
-import { MyButton } from '../_UI_Elements/MyButton/MyButton'
+import { Doc } from '../../../types/IFilms';
+import { MyButton } from '../../_UI_Elements/MyButton/MyButton';
 import styles from './mainFilmsHeader.module.css'
 
 interface IMainFilmsHeader {
