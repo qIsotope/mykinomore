@@ -1,46 +1,32 @@
-import 'rc-slider/assets/index.css';
-import { RiArrowDownSLine } from 'react-icons/ri'
+
+import { useAppSelector } from '../../../hooks/reduxHooks';
+import { IFilterObject } from '../../../types/filterObjects';
+import { getCurrentYear } from '../../../utils/getCurrentYear';
 import styles from './filters.module.css'
-import Slider from 'rc-slider';
-import { useState } from 'react';
+import { RadioFilter } from './RadioFilter/RadioFilter';
+import { SelectFilter } from './SelectFilter/SelectFilter';
+import { SliderFilter } from './SliderFilter/SliderFilter';
+
+
+export const filterObject: IFilterObject = {
+	genre: {
+		label: "Все жанры",
+		value: ""
+	},
+	rating: [1, 10],
+	year: [1887, getCurrentYear()],
+	sort: '-1'
+}
 
 
 export const Filters = () => {
-	const [values, setValues] = useState<any>([1, 10])
-
-	const onChange = (e: any) => {
-		setValues(e)
-		console.log(e, 'e')
-
-	}
-
-
+	const resetting = useAppSelector(state => state.filter.resetting);
 	return (
 		<div className={styles.catalog__sidebarFilters}>
-			<div className={styles.catalog__filterItem}>
-				Рейтинг
-				<span className={styles.catalog__filterItemIcon} ><RiArrowDownSLine /></span>
-			</div>
-			<div className={styles.catalog__inputs}>
-				<input className={styles.catalog__input} type="text" value={values[0]} disabled />
-				<input className={styles.catalog__input} type="text" value={values[1]} disabled />
-			</div>
-			<div>
-
-				<Slider className={styles.catalog__ratio} step={1} range allowCross={false} value={values} onChange={(e) => { onChange(e) }} min={1} max={10} />
-			</div>
-			<div className={styles.catalog__filterItem}>
-				Года производства
-				<span className={styles.catalog__filterItemIcon} ><RiArrowDownSLine /></span>
-			</div>
-			<div className={styles.catalog__filterItem}>
-				Жанры
-				<span className={styles.catalog__filterItemIcon} ><RiArrowDownSLine /></span>
-			</div>
-			<div className={styles.catalog__filterItem}>
-				Год выхода
-				<span className={styles.catalog__filterItemIcon} ><RiArrowDownSLine /></span>
-			</div>
+			<SliderFilter name={'Рейтинг'} values={filterObject.rating} min={1} max={10} filterObj={filterObject} resetting={resetting} />
+			<SliderFilter name={'Года производства'} values={filterObject.year} min={1887} max={getCurrentYear()} filterObj={filterObject} resetting={resetting} />
+			<SelectFilter filterObj={filterObject} resetting={resetting} />
+			<RadioFilter filterObj={filterObject} resetting={resetting} />
 		</div>
 	)
 }

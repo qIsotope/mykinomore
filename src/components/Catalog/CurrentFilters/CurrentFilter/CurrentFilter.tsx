@@ -1,7 +1,8 @@
+import { ReactNode } from 'react'
 import styles from './currentFilter.module.css'
 
 interface ICurrentFilter {
-	children: string
+	children: ReactNode
 }
 
 export const CurrentFilter = (props: ICurrentFilter) => {

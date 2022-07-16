@@ -26,24 +26,24 @@ body {
 
 
 .rc-slider-handle {
-	position: absolute;
-	width: 18px;
-	height: 18px;
-	margin-top: -7px;
-	background-color: #fff;
-	border-radius: 50%;
-	cursor: pointer;
-	cursor: grab;
-	opacity: 0.8;
-	touch-action: pan-x;
-	box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+	position: absolute !important;
+	width: 18px !important;
+	height: 18px !important;
+	margin-top: -7px !important;
+	background-color: #fff !important;
+	border-radius: 50% !important;
+	cursor: pointer !important;
+	cursor: grab !important;
+	opacity: 0.8 !important;
+	touch-action: pan-x !important;
+	box-shadow: 0 1px 2px rgb(0 0 0 / 30%) !important;
 }
 
 .rc-slider-track {
-	position: absolute;
-	height: 4px;
-	background-color: #005382;
-	border-radius: 6px;
+	position: absolute !important;
+	height: 4px !important;
+	background-color: #005382 !important;
+	border-radius: 6px !important;
 }
 
 .rc-slider-handle-dragging {

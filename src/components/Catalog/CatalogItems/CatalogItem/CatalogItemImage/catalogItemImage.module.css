@@ -1,0 +1,20 @@
+.catalog__itemImage {
+	position: relative;
+	width: 64px;
+	height: 96px;
+	flex-shrink: 0;
+	display: block;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-right: 20px;
+	background-color: #000;
+	cursor: pointer;
+}
+
+.catalog__itemImage img {
+	width: 100%;
+}
+
+.catalog__itemImg:hover {
+	transform: scale(1.03)
+}

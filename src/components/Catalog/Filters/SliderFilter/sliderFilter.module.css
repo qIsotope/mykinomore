@@ -1,0 +1,27 @@
+.catalog__ratio {
+	color: red;
+	margin-bottom: 20px;
+}
+
+.catalog__inputs {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.catalog__input {
+	appearance: none;
+	outline: none;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	padding: 0 15px;
+	height: 44px;
+	font-size: 15px;
+	line-height: 17px;
+	width: 100%;
+}
+
+.catalog__input:disabled {
+	background-color: rgb(207 207 207 / 49%);
+}

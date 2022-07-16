@@ -1,0 +1,11 @@
+.catalog__filterSelect__indicator-separator {
+	display: none;
+}
+
+.catalog__filterSelect__control--is-focused {
+	border: 2px solid gray;
+}
+
+.css-b62m3t-container {
+	margin-bottom: 20px;
+}

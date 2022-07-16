@@ -1,0 +1,17 @@
+.catalog__itemRatingLow {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 600;
+	margin-right: 25px;
+	margin-left: 5px;
+	color: rgb(194, 7, 7);
+}
+
+.catalog__itemRatingHigh {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 600;
+	margin-right: 25px;
+	margin-left: 5px;
+	color: rgb(5, 168, 5);
+}

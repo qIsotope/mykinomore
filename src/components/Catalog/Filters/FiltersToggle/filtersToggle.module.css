@@ -1,0 +1,27 @@
+.catalog__filterItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+
+.catalog__filterItemIcon {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+
+.catalog__filterItemDefault {
+	transition: all 0.2s ease-in-out;
+}
+
+.catalog__filterItemRotate {
+	transition: all 0.2s ease-in-out;
+	transform: rotate(180deg);
+}

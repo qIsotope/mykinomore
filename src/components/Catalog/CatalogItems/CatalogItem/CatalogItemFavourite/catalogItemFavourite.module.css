@@ -1,0 +1,30 @@
+.catalog__itemFavourite {
+	width: auto;
+	height: auto;
+	border-radius: 5px;
+	padding: 8px 12px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #999;
+	border: 1px solid rgba(0, 0, 0, .2);
+	min-width: 143px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+}
+
+.catalog__itemFavouriteIcon {
+	color: #999;
+	width: 14px;
+	height: 14px;
+	fill: currentColor;
+}
+
+.catalog__itemFavouriteIconContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
