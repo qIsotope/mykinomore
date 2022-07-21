@@ -1,0 +1,7 @@
+.item__title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 48px;
+	max-width: 650px;
+	margin-bottom: 20px;
+}

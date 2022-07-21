@@ -1,3 +1,11 @@
 .catalog__listOfItems {
-	position: relative;
+	width: 100%;
+}
+
+
+.catalog__emptyList {
+	padding-top: 100px;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
 }

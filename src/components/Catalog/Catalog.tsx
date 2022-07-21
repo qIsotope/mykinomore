@@ -1,15 +1,28 @@
-import { Footer } from "../Footer/Footer"
-import { Header } from "../Header/Header"
+import { ICatalogData } from "../../types/catalogDataTypes";
 import { CatalogBody } from "./CatalogBody/CatalogBody";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
+import { resetFilters } from "../../redux/slices/filter";
+import { useAppDispatch } from "../../hooks/reduxHooks";
 
 
-export const Catalog = () => {
+
+
+export const Catalog = (props: ICatalogData) => {
+	const location = useLocation()
+	const dispatch = useAppDispatch()
+	useEffect(() => {
+		dispatch(resetFilters())
+	}, [location.pathname])
+
+
+
 	return (
 
 		<div className="App">
-			<Header />
-			<CatalogBody />
-			<Footer />
+
+			<CatalogBody data={props.data} isFetching={props.isFetching} isLoading={props.isLoading} />
+
 		</div >
 	)
 }

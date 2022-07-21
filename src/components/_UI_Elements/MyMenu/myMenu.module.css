@@ -1,0 +1,75 @@
+.header__menuBars {
+	width: 24px;
+	height: 24px;
+	opacity: .6;
+	cursor: pointer;
+}
+
+
+.header__menu {
+	position: absolute;
+	top: 67px;
+	left: -25px;
+	opacity: 0;
+	visibility: hidden;
+	width: 240px;
+	padding: 17px 25px 10px;
+	border-radius: 0 0 10px 10px;
+	background-color: #1f1f1f;
+	box-shadow: 0 54px 40px rgb(0 0 0 / 12%), 0 19.2px 51.2px rgb(0 0 0 / 16%), 0 80px 89.6px rgb(0 0 0 / 24%);
+	transition: opacity .3s, visibility .3s;
+}
+
+.header__menuOpen {
+	position: absolute;
+	top: 67px;
+	left: -25px;
+	opacity: 1;
+	width: 240px;
+	padding: 17px 25px 10px;
+	border-radius: 0 0 10px 10px;
+	background-color: #1f1f1f;
+	box-shadow: 0 54px 40px rgb(0 0 0 / 12%), 0 19.2px 51.2px rgb(0 0 0 / 16%), 0 80px 89.6px rgb(0 0 0 / 24%);
+	transition: opacity .3s, visibility .3s;
+}
+
+
+
+.header__menuItem {
+	margin-bottom: 22px;
+	position: relative;
+	font-size: 15px;
+	line-height: 15px;
+	color: #fff;
+	opacity: .8;
+	transition: opacity .3s;
+	outline: none;
+	display: flex;
+	gap: 20px;
+	transition: all .3s linear;
+}
+
+.header__menuItem:hover {
+	opacity: 1;
+}
+
+.header__menuItemActive {
+	margin-bottom: 22px;
+	position: relative;
+	color: #fff;
+	transition: opacity .3s;
+	outline: none;
+	display: flex;
+	gap: 20px;
+	transition: all .3s linear;
+	opacity: 1;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.header__menuItemActive span {
+	border-bottom: 2px solid #005382;
+	padding-bottom: 5px;
+
+}

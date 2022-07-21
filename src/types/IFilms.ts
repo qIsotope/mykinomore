@@ -58,7 +58,7 @@ export interface Doc {
 }
 
 export interface IFilm {
-	docs: Doc[];
+	docs: Doc[] | undefined;
 	total: number;
 	limit: number;
 	page: number;

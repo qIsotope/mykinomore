@@ -31,7 +31,7 @@ export const MainFilms = () => {
 
 	return (
 		<>
-			<MainFilmsHeader setMovies={setMovies} />
+			<MainFilmsHeader films/>
 			<MainFilmsListOfFilms movies={movies} />
 			<MainFilmsButton setPage={setPage} page={page} fetching={fetching} hide={hide} />
 		</>

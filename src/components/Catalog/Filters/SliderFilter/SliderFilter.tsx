@@ -20,7 +20,6 @@ export const SliderFilter = (props: ISlicerFilter) => {
 	const [val, setVal] = useState(props.values)
 	const [open, setOpen] = useState(true)
 	useEffect(() => {
-		console.log([props.min, props.max]);
 		if (props.resetting === true) {
 			setVal([props.min, props.max])
 		}

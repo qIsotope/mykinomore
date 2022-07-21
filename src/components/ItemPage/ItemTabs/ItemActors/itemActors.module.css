@@ -1,0 +1,59 @@
+.actors__swiperImage {
+	width: 212px;
+	height: 318px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+
+
+.actors__swiperImage img {
+	width: 100%;
+	height: 100%;
+	opacity: 0.92;
+	transition: all 0.2s linear;
+	border-radius: 5px;
+}
+
+.actors__swiperImage:hover .actors__swiperImg {
+	opacity: 1;
+	transform: scale(1.01);
+}
+
+
+
+.actors__name {
+	margin-top: 10px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+	color: #141414;
+	transition: color .3s;
+	margin: 10px 0 5px;
+	transition: color .3s linear;
+}
+
+.actors__name:hover {
+	color: #005382;
+}
+
+.actors__proffesion {
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(0, 0, 0, .5);
+}
+
+.actors__title {
+	margin-top: 30px;
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+
+.actors__digit {
+	color: rgba(0, 0, 0, .5);
+	font-weight: 400;
+}

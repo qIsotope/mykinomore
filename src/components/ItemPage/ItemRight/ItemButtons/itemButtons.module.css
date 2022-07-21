@@ -1,0 +1,58 @@
+.item__buttons {
+	display: flex;
+	align-items: center;
+	margin-bottom: 35px;
+	gap: 15px;
+}
+
+.item__buttonsWatch {
+	border-radius: 30px;
+	padding: 13px 24px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	color: #fff;
+	background-color: #005382;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	transition: all 0.3s ease;
+}
+
+.item__buttonsWatch:hover {
+	background-color: #003f63;
+}
+
+.item__buttonsWatchIcon {
+	width: 14px;
+	height: 14px;
+	stroke: #fff;
+	fill: #fff;
+}
+
+.item__buttonsFavourite {
+	border-radius: 30px;
+	padding: 13px 24px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	background-color: #f2f2f2;
+	color: #000;
+	transition: background-color .3s, color .3s;
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	transition: all 0.3s ease;
+}
+
+.item__buttonsFavourite:hover {
+	background: #e6e6e6;
+}
+
+.item__buttonsFavouriteIcon {
+	width: 14px;
+	height: 14px;
+	stroke: #141414;
+	fill: #141414;
+}

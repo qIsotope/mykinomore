@@ -1,0 +1,43 @@
+.item__mainLeft {
+	width: fit-content;
+	position: relative;
+}
+
+.item__mainLeft img {
+	position: relative;
+	width: 300px;
+	height: auto;
+	border-radius: 5px;
+	overflow: hidden;
+	-o-object-fit: cover;
+	object-fit: cover;
+	aspect-ratio: 2/3;
+	background-color: var(--color-dark);
+}
+
+.item__ratingHigh {
+	position: absolute;
+	padding: 2px 8px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	border-radius: 5px;
+	background-color: #00a340;
+	top: 13px;
+	left: 14px;
+	z-index: 1;
+	color: white;
+}
+
+.item__ratingLow {
+	position: absolute;
+	padding: 2px 8px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	border-radius: 5px;
+	background-color: red;
+	top: 13px;
+	left: 14px;
+	z-index: 1;
+}

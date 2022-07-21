@@ -1,22 +1,23 @@
-import { Doc } from '../../../types/IFilms';
+import { Link } from 'react-router-dom';
 import { MyButton } from '../../_UI_Elements/MyButton/MyButton';
 import styles from './mainFilmsHeader.module.css'
 
-interface IMainFilmsHeader {
-	setMovies: (v:Doc[]) => void;
-}
 
-export const MainFilmsHeader = (props:IMainFilmsHeader) => {
-	
+
+export const MainFilmsHeader = ({ films }: { films?: boolean }) => {
+
 	return (
 		<div className={styles.film__header}>
 			<div className={styles.films__headerText}>
 				Новые фильмы
 			</div>
 			<div className={styles.films__headerButton}>
-				<MyButton>
-					Смотреть все
-				</MyButton>
+				<Link to={films ? '/films' : '/series'}>
+					<MyButton>
+						Смотреть все
+					</MyButton>
+				</Link>
+
 			</div>
 		</div>
 	)

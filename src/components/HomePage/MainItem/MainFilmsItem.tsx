@@ -1,4 +1,5 @@
 import { FiStar } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 import styles from './mainFilmsItem.module.css'
 
 interface IMainFilmsItem {
@@ -7,12 +8,12 @@ interface IMainFilmsItem {
 	image: string,
 	type: string,
 	rating: number
-
+	id: number
 }
 
-export const MainFilmsItem = ({ name, year, image, type, rating }: IMainFilmsItem) => {
+export const MainFilmsItem = ({ name, year, image, type, rating, id }: IMainFilmsItem) => {
 	return (
-		<div className={styles.films__item}>
+		<Link to={`/film/${id}`} className={styles.films__item}>
 			<div className={styles.films__itemImage}>
 				<img className={styles.films__image} src={image} alt="#" />
 				<div className={styles.films__itemStars}>
@@ -27,6 +28,6 @@ export const MainFilmsItem = ({ name, year, image, type, rating }: IMainFilmsIte
 					{year}, {type}
 				</div>
 			</div>
-		</div>
+		</Link>
 	)
 }

@@ -17,7 +17,6 @@ export interface filterState {
 }
 
 const initialState: filterState = {
-
 	rating: [1, 10],
 	year: [1887, getCurrentYear()],
 	genre: genres[0],

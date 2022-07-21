@@ -13,13 +13,24 @@
 	align-items: center;
 	justify-content: center;
 	background-color: #fff;
+	transition: all 0.3s ease;
 }
 
-.catalog__itemFavouriteIcon {
+.catalog__itemFavourite:hover {
+	background-color: #005382;
+	color: white;
+}
+
+.catalog__itemFavourite:hover .catalog__itemFavouriteIconBookmark {
+	color: white;
+}
+
+.catalog__itemFavouriteIconBookmark {
 	color: #999;
 	width: 14px;
 	height: 14px;
 	fill: currentColor;
+	transition: all 0.3s ease;
 }
 
 .catalog__itemFavouriteIconContainer {
@@ -27,4 +38,12 @@
 	align-items: center;
 	justify-content: center;
 	margin-right: 10px;
+}
+
+.catalog__itemFavouriteIconCheck {
+	width: 14px;
+	height: 14px;
+	font-size: 18px;
+	transition: all 0.3s ease;
+
 }

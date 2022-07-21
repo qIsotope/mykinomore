@@ -1,0 +1,28 @@
+.item__reviews {
+	padding-top: 80px;
+}
+
+.reviews__title {
+	font-size: 26px;
+	line-height: 30px;
+	font-weight: 700;
+	margin: 0 0 40px;
+	color: #1f1f1f;
+}
+
+.review__content {
+	display: flex;
+	align-items: flex-start;
+	gap: 60px;
+
+}
+
+.reviews__body {
+	width: 100%;
+	max-width: 800px;
+
+}
+
+
+
+

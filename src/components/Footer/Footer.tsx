@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './footer.module.css'
 
 export const Footer = () => {
@@ -5,9 +6,9 @@ export const Footer = () => {
 		<footer className={styles.footer}>
 			<div className="container">
 				<div className={styles.footer__wrapper}>
-					<div className={styles.footer__logo}>
+					<Link to="" className={styles.footer__logo}>
 						<img src="./assets/header/logo.svg" alt="" />
-					</div>
+					</Link>
 					<div className={styles.footer__links}>
 						<span className={styles.footer__linksItem}>
 							Фильмы
