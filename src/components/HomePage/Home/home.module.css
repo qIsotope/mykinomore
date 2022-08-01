@@ -3,10 +3,11 @@
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 50%;
-	overflow: hidden;
-	margin-bottom: 80px;
 	color: #fff;
+	background-position: center -60%;
+	background-color: darkblue;
+	overflow: hidden;
+	margin-bottom: 70px;
 }
 
 .home__textBlock {

@@ -1,7 +1,9 @@
+
 // import { filterState } from './../slices/filter';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { IFilm } from '../../types/IFilms';
+import { Doc, IFilm } from '../../types/IFilms';
 import { IMovie } from '../../types/IFilmsById';
+import { IPerson } from '../../types/IPerson';
 import { getCurrentYear } from '../../utils/getCurrentYear';
 import { filterState } from '../slices/filter';
 export const API_URL = 'https://api.kinopoisk.dev';
@@ -10,6 +12,16 @@ export const API_KEY = 'RAGDFMM-MN8MP9S-MH96EDA-9FBPB8V'
 interface IgetReviewsById {
 	id: string | undefined;
 	limit: number;
+}
+interface IgetFilmsById {
+	query: string
+	limit: number
+}
+
+interface IgetFilmsByQuery {
+	query: string
+	type: string
+	limit: number
 }
 
 export interface IReview {
@@ -84,7 +96,27 @@ export const kinopoiskApi = createApi({
 			query: ({ id, limit }) =>
 				`/review?search=${id}&field=movieId&limit=${limit}&token=${API_KEY}`
 		}),
+		getPersonById: builder.query<IPerson, number>({
+			query: (id) =>
+				`/person?search=${id}&field=id&token=${API_KEY}`
+		}),
+		getFilmsById: builder.query<IFilm, IgetFilmsById>({
+			query: ({ query, limit }) => `/movie?${query}&limit=${limit}&token=${API_KEY}`
+		}),
+		getFilmsByQuery: builder.query<Doc[], IgetFilmsByQuery>({
+			query: ({ query, type, limit }) => `/movie?search=${query}&field=name&limit=${limit}&sortField=year&sortType=-1&field=typeNumber&search=${type}&isStrict=false&token=${API_KEY}`,
+			transformResponse: (response: IFilm) => {
+				const filter = response.docs!.filter((r) => r.year <= getCurrentYear())
+				return filter
+			}
+		}),
+
+		getFilmsBySearch: builder.query<IFilm, IGetFavourites>({
+			query: ({ query, filters, page }) =>
+				`/movie?&search=${query}&field=name&search=${filters.rating[0] + '-' + filters.rating[1]}&field=rating.kp&search[]=${filters.genre.value === '' ? '' : `${filters.genre.value}&field[]=genres.name`}&search=${filters.year[0] + '-' + filters.year[1]}&field=year&sortField=year&sortType=${filters.sort}&page=${page}&isStrict=false&token=RAGDFMM-MN8MP9S-MH96EDA-9FBPB8V`
+		}),
 	}),
 })
 
-export const { useGetFilmsForYearQuery, useGetSeriesForYearQuery, useGetFilmsQuery, useGetSeriesQuery, useGetCartoonsQuery, useGetFavouritesQuery, useGetFilmForIdQuery, useGetReviewsByIdQuery } = kinopoiskApi
+
+export const { useGetFilmsForYearQuery, useGetSeriesForYearQuery, useGetFilmsQuery, useGetSeriesQuery, useGetCartoonsQuery, useGetFavouritesQuery, useGetFilmForIdQuery, useGetReviewsByIdQuery, useGetPersonByIdQuery, useGetFilmsByIdQuery, useGetFilmsByQueryQuery, useLazyGetFilmsByQueryQuery, useGetFilmsBySearchQuery } = kinopoiskApi

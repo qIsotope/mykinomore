@@ -17,7 +17,7 @@ export const ReviewsInfo = ({ goodReviews, badReviews, neutralReviews, allReview
 				</div>
 			</div>
 			<div className={styles.reviews__infoItem}>
-				<div className={classNames(styles.reviews__infoDigit, styles.red)}>
+				<div className={classNames(styles.reviews__infoDigit, styles.green)}>
 					{goodReviews}
 					<span className={styles.reviews__percentage}>{findPercentage(goodReviews, allReviews)}%</span>
 				</div>
@@ -26,7 +26,7 @@ export const ReviewsInfo = ({ goodReviews, badReviews, neutralReviews, allReview
 				</div>
 			</div>
 			<div className={styles.reviews__infoItem}>
-				<div className={classNames(styles.reviews__infoDigit, styles.green)}>
+				<div className={classNames(styles.reviews__infoDigit, styles.red)}>
 					{badReviews}
 					<span className={styles.reviews__percentage}>{findPercentage(badReviews, allReviews)}%</span>
 				</div>

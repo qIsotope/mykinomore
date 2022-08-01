@@ -10,9 +10,7 @@ import { ItemReviews } from "../components/ItemPage/ItemReviews/ItemReviews"
 
 
 export const ItemPage = () => {
-
 	const { id } = useParams()
-
 	const { data } = useGetFilmForIdQuery(Number(id))
 
 	return (
@@ -20,7 +18,7 @@ export const ItemPage = () => {
 			<div className="container">
 				<ItemTop />
 				<div className={styles.item__main}>
-					<ItemLeft url={data?.poster.url} />
+					<ItemLeft url={data?.poster.url} rating={data?.rating.kp} />
 					<ItemRight data={data} />
 				</div>
 				<ItemTabs description={data?.description} actors={data?.persons} facts={data?.facts} />

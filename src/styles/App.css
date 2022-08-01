@@ -50,3 +50,13 @@ body {
 	border-color: none !important;
 	box-shadow: none !important;
 }
+
+#nprogress .bar {
+	background: #175a77 !important;
+	position: fixed;
+	z-index: 1031;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px !important;
+}

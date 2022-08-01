@@ -12,6 +12,7 @@
 }
 
 .catalog__itemImage img {
+	height: 96px;
 	width: 100%;
 }
 

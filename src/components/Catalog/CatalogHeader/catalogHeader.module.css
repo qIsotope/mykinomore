@@ -16,3 +16,8 @@
 	font-weight: 300;
 	color: #1f1f1f;
 }
+
+.catalog__headerSubtitle a {
+	color: #005382;
+	text-decoration: underline;
+}

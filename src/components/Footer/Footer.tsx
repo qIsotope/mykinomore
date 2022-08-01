@@ -7,18 +7,18 @@ export const Footer = () => {
 			<div className="container">
 				<div className={styles.footer__wrapper}>
 					<Link to="" className={styles.footer__logo}>
-						<img src="./assets/header/logo.svg" alt="" />
+						<img src="/assets/header/logo.svg" alt="" />
 					</Link>
 					<div className={styles.footer__links}>
-						<span className={styles.footer__linksItem}>
+						<Link to={'/films'} className={styles.footer__linksItem}>
 							Фильмы
-						</span>
-						<span className={styles.footer__linksItem}>
+						</Link>
+						<Link to={'/series'} className={styles.footer__linksItem}>
 							Сериалы
-						</span>
-						<span className={styles.footer__linksItem}>
+						</Link>
+						<Link to={'/cartoons'} className={styles.footer__linksItem}>
 							Мультфильмы
-						</span>
+						</Link>
 					</div>
 					<div className={styles.footer__signature}>
 						© 2022 Kinomore

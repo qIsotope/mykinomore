@@ -1,5 +1,5 @@
 import pagination from '../slices/pagination'
-
+import query from '../slices/query'
 import { configureStore } from '@reduxjs/toolkit'
 import { kinopoiskApi } from '../services/kinopoisk.services'
 import filter from '../slices/filter'
@@ -8,6 +8,7 @@ export const store = configureStore({
 	reducer: {
 		filter,
 		pagination,
+		query,
 		[kinopoiskApi.reducerPath]: kinopoiskApi.reducer,
 	},
 

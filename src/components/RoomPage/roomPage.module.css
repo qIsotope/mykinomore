@@ -1,0 +1,10 @@
+.room {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.room__film {
+	width: 100%;
+	height: calc(100% - 63px);
+}

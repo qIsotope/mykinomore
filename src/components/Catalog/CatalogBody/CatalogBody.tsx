@@ -6,6 +6,8 @@ import styles from './catalogBody.module.css'
 
 
 export const CatalogBody = (props: ICatalogData) => {
+	
+
 	return (
 		<section className={styles.catalog}>
 			<div className="container">

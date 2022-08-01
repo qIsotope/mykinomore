@@ -19,8 +19,8 @@ export const CatalogItem = (props: ICatalogItemProps) => {
 	return (
 		<div className={styles.catalog__item}>
 			<div className={styles.catalog__itemLeft}>
-				<CatalogItemImage image={props.image} />
-				<CatalogItemInfo description={props.description} year={props.year} movieLength={props.movieLength} name={props.name} />
+				<CatalogItemImage image={props.image} id={props.id} />
+				<CatalogItemInfo description={props.description} year={props.year} movieLength={props.movieLength} name={props.name} id={props.id} />
 			</div>
 			<div className={styles.catalog__itemRight}>
 				<CatalogItemRating rating={props.rating} />

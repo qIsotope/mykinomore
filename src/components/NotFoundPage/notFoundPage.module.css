@@ -1,0 +1,46 @@
+.notfound {
+	height: calc(100vh - 115px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.notfound__body {
+	text-align: center;
+	padding-top: 140px;
+	padding-bottom: 140px;
+}
+
+.notfound__title {
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 70px;
+	max-width: 450px;
+	margin: 0 auto 30px;
+}
+
+.notfound__subtitle {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	max-width: 400px;
+	margin: 0 auto 40px;
+}
+
+.notfound__back {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	color: #fff;
+	font-weight: 500;
+	padding: 13px 40px;
+	font-size: 16px;
+	line-height: 16px;
+	border: 1px solid transparent;
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #175a77;
+	transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+}

@@ -1,6 +1,6 @@
 import styles from './itemInfo.module.css'
 
-export const ItemInfo = ({ caption, value }: any) => {
+export const ItemInfo = ({ caption, value }: { caption: string, value: string | undefined | number }) => {
 	return (
 		<div className={styles.item__info}>
 			<div className={styles.item__infoItem}>

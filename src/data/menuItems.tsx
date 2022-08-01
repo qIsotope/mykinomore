@@ -4,7 +4,7 @@ import { FiHome, FiFilm, FiTv, FiHeart } from "react-icons/fi";
 
 
 export const items = [
-	{ icon: <FiHome />, href: '/*', text: 'Главная' },
+	{ icon: <FiHome />, href: '', text: 'Главная' },
 	{ icon: <FiFilm />, href: '/films', text: 'Фильмы' },
 	{ icon: <FiTv />, href: '/series', text: 'Сериалы' },
 	{ icon: <BiMovie />, href: '/cartoons', text: 'Мультфильмы' },

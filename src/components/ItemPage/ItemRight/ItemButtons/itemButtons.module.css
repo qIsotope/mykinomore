@@ -56,3 +56,12 @@
 	stroke: #141414;
 	fill: #141414;
 }
+
+.item__buttonChecked {
+	font-size: 18px;
+	transition: all 0.3s ease;
+}
+
+.item__buttonChecked svg {
+	font-size: 30px;
+}

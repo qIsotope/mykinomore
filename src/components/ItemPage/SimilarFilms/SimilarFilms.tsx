@@ -5,6 +5,7 @@ import 'swiper/css';
 import styles from './similarFilms.module.css'
 import { Link } from 'react-router-dom';
 import { Poster } from '../../../types/IFilms';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 interface ISimilarFilms {
@@ -17,7 +18,6 @@ interface ISimilarFilms {
 }
 
 export const SimilarFilms = ({ films }: { films: ISimilarFilms[] | undefined; }) => {
-	console.log(films);
 
 	return (
 		<>
@@ -25,13 +25,14 @@ export const SimilarFilms = ({ films }: { films: ISimilarFilms[] | undefined; })
 			<Swiper
 				slidesPerView={5}
 			>
-				{films?.map(a => <SwiperSlide>
+				{films?.map(a => <SwiperSlide key={a.id}>
 					<Link to={`/film/${a.id}`} className={styles.films__swiperItem}>
 						<div className={styles.films__swiperImage}>
-							<img className={styles.films__swiperImg} src={a.poster.url} alt="" />
+							<LazyLoadImage className={styles.films__swiperImg} src={a.poster.url}
+								placeholderSrc='/assets/placeholder.jpg' height='318' width='212' />
 						</div>
-						<Link to={`/film/${a.id}`} className={styles.films__name}>{a.name}</Link>
 					</Link>
+					<Link to={`/film/${a.id}`} className={styles.films__name}>{a.name}</Link>
 				</SwiperSlide>)}
 
 			</Swiper>

@@ -16,6 +16,11 @@
 	border-radius: 5px;
 }
 
+.films__swiperImage span {
+	width: 100%;
+	height: 100%;
+}
+
 .films__swiperImage:hover .films__swiperImg {
 	opacity: 1;
 	transform: scale(1.01);

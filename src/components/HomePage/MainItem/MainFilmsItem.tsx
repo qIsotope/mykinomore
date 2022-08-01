@@ -1,4 +1,5 @@
 import { FiStar } from 'react-icons/fi'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 import styles from './mainFilmsItem.module.css'
 
@@ -15,7 +16,7 @@ export const MainFilmsItem = ({ name, year, image, type, rating, id }: IMainFilm
 	return (
 		<Link to={`/film/${id}`} className={styles.films__item}>
 			<div className={styles.films__itemImage}>
-				<img className={styles.films__image} src={image} alt="#" />
+				<LazyLoadImage className={styles.films__image} src={image} placeholderSrc='/assets/placeholder.jpg' />
 				<div className={styles.films__itemStars}>
 					<FiStar /> <span>{rating}</span>
 				</div>

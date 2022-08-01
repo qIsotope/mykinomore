@@ -8,7 +8,7 @@ export const ItemFacts = ({ facts }: { facts: IFact[] | undefined }) => {
 		<>
 			<div className={styles.item__factsTitle}>Знаете ли вы, что...</div>
 			{
-				facts?.map((f: any) => <div className={styles.item__factsSingle}
+				facts?.map((f) => <div key={f.value} className={styles.item__factsSingle}
 					dangerouslySetInnerHTML={{ __html: f.value }} ></div>)
 			}
 		</>

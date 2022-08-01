@@ -1,0 +1,19 @@
+.search__button {
+	cursor: pointer;
+	width: 123px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 13px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	color: #fff;
+	font-weight: 500;
+	transition: all 0.3s linear;
+	height: 100%;
+}
+
+.red {
+	background-color: #ff0000;
+}

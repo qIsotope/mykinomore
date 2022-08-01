@@ -52,7 +52,7 @@ export interface Doc {
 	description: string;
 	year: number;
 	alternativeName: string;
-	enName?: any;
+	enName?: string;
 	names: Name[];
 	shortDescription: string;
 }

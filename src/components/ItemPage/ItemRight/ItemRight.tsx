@@ -15,13 +15,14 @@ interface IItemRight {
 export const ItemRight = (props: IItemRight) => {
 
 	const info = createFilmInfo(props.data)
-
 	return (
 		<div className={styles.item__mainRight}>
 			<ItemTitle name={props.data?.name} year={props.data?.year} />
 			<ItemOriginalTitle name={props.data?.alternativeName} />
-			<ItemButtons />
-			<ItemSubtitle />
+			<ItemButtons id={props.data?.id} />
+			<ItemSubtitle>
+				О фильме
+			</ItemSubtitle>
 			{info.map((item) => <ItemInfo key={item.label} caption={item.label} value={item.value} />)}
 
 		</div>

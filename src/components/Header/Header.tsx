@@ -1,7 +1,8 @@
-import { FiSearch, } from 'react-icons/fi';
 import styles from './header.module.css'
 import { MyMenu } from '../_UI_Elements/MyMenu/MyMenu';
 import { Link } from 'react-router-dom';
+import { Search } from './Search/Search';
+import { useAppSelector } from '../../hooks/reduxHooks';
 
 
 export const Header = () => {
@@ -15,10 +16,7 @@ export const Header = () => {
 							<img src="/assets/header/logo.svg" alt="NO LOGO" />
 						</Link>
 					</div>
-					<div className={styles.header__search}>
-						<input type="search" placeholder="Поиск..." />
-						<span><FiSearch className={styles.searcIcon} /></span>
-					</div>
+					<Search />
 					<div className={styles.header__login}>
 						Войти
 					</div>

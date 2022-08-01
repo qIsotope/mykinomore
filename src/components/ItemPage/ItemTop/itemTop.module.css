@@ -1,12 +1,24 @@
 .item__top {
-	display: flex;
+	display: inline-flex;
 	gap: 5px;
 	font-size: 16px;
 	line-height: 16px;
 	font-weight: 400;
 	color: #1f1f1f;
 	margin-bottom: 30px;
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
+
+.item__topSVG {
+	transition: all 0.4s ease;
+	font-size: 15px;
+}
+
+.item__top:hover .item__topSVG {
+	padding-right: 2px;
+}
+
 
 .item__top span {
 	font-size: 15px;
